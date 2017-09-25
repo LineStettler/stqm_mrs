@@ -1,3 +1,7 @@
 /target/
 /log/
 /.settings/
+.idea/
+out/
+src/main/main.iml
+src/test/test.iml
