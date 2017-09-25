@@ -1,3 +1,9 @@
 /target/
 /log/
 /.settings/
+
+\.idea/
+
+*.iml
+
+src/main/resources/hsqldb-2\.4\.0/
