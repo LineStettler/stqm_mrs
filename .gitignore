@@ -6,3 +6,4 @@ out/
 src/main/main.iml
 src/test/test.iml
 src/main/resources/hsqldb-2\.4\.0/
+MRSfx\.iml
