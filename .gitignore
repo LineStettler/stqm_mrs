@@ -27,3 +27,10 @@ mrs\.log
 mrs\.properties
 
 mrs\.script
+
+lib/*
+mydb.log
+mydb.lck
+mydb.properties
+mydb.script
+MRSfx.iml
