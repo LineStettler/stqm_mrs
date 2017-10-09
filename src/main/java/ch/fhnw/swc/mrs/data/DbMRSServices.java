@@ -132,6 +132,7 @@ public class DbMRSServices implements MRSServices {
 	    try {
 	        getRentalDAO().save(r);
 	        m.setRented(true);
+
 	        getMovieDAO().saveOrUpdate(m);
 	    } catch (Exception e) {
 	        e.printStackTrace();
