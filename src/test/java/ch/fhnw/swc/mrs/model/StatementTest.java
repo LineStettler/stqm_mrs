@@ -27,7 +27,7 @@ public class StatementTest {
         rentals.add(r3);
     }
 
-    private class TestStatement extends Statement{
+    private static final class TestStatement extends Statement{
 
         String name;
         String firstName;
@@ -39,7 +39,7 @@ public class StatementTest {
 
         @Override
         public String print() {
-            return null;
+            return "";
         }
     }
 

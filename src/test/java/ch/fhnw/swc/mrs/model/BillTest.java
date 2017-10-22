@@ -14,6 +14,7 @@ public class BillTest {
     public void testPrint() {
         Bill b = new Bill("Muster", "Hans", createRentalList());
         String s = b.print();
+        System.out.println(s);
         String[] lines = s.split("\n");
         assertEquals(9, lines.length);
         assertEquals("Statement", lines[0]);

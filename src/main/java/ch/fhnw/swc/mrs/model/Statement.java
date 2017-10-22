@@ -15,13 +15,22 @@ public abstract class Statement {
      * @param rentals a list of rentals to be billed.
      */
     public Statement(String name, String firstName, List<Rental> rentals) {
-        if (name.length() > 8 || firstName.length() > 8 || rentals == null) {
+        if (name.length() > 8 )
+        {
+            name = name.substring(0,5) + "..";
+        }
+        if(firstName.length() > 8 ){
+            firstName = firstName.substring(0,5) + "..";
+        }
+        if( rentals == null) {
             throw new IllegalArgumentException();
         }
         this.firstName = firstName;
         this.lastName = name;
         this.rentals = rentals;
     }
+    //add if the name is longer than 8, just show first 6 chars and add ..
+
     
     /** @return A list of rentals to be used to print a statement. */
     public List<Rental> getRentals() {
